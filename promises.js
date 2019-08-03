@@ -47,15 +47,16 @@ function createPost(post, callback){
 init(); */
 
 // Async / Await / Fetch
-async function fetchUsers(){
+// User IIFE Here, which is called as iffy
+(async function fetchUsers(){
     const res = await fetch('http://jsonplaceholder.typicode.com/users');
     
     const data = await res.json();
 
     console.log(data);
-}
+})();
 
-fetchUsers();
+//fetchUsers();
 
 // Promise.all
 /* const promise1 = Promise.resolve("Hello World");
