@@ -2,8 +2,15 @@
   "name": "js-functional-programming",
   "version": "1.0.0",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "dev" : "webpack --mode development app.js",
+    "build" : "webpack --mode production app.js"
+  },
   "dependencies": {
-    "lodash": "4.17.15"
+    "lodash": "4.17.15",
+    "webpack": "^4.39.3"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.7"
   }
 }
